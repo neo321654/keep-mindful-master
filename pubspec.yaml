@@ -1,0 +1,87 @@
+name: keep_mindful
+description: Companion app for Keep mindful ring
+publish_to: 'none'
+
+version: 0.0.1-pre-alpha+6
+
+environment:
+  sdk: '>=3.0.5 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: 1.0.5
+  flutter_svg: 2.0.7
+  injectable: 2.3.0
+#  built_value: 8.6.2
+  flutter_localizations:
+    sdk: flutter
+  intl:
+  auto_route: 7.8.3
+  get_it: 7.6.0
+  dio: 5.3.2
+  hive: 2.2.3
+  hive_flutter: 1.1.0
+  built_collection: 5.1.1
+  numpad_layout: 0.0.3
+  card_swiper: 3.0.1
+  ory_kratos_client: 1.0.0
+  one_of: 1.5.0
+  flutter_dotenv: 5.1.0
+  dropdown_button2: 2.3.9
+  qr_flutter: 4.1.0
+  mobile_scanner: 3.5.5
+  path_provider: 2.1.2
+  gal: 2.3.0
+  flutter_blue_plus: 1.32.4
+  convert: 3.1.1
+  flutter_logs: 2.1.11
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: 2.0.2
+  auto_route_generator: 7.3.1
+  build_runner: 2.4.6
+  flutter_gen_runner: 5.3.1
+  injectable_generator: 2.4.0
+  hive_generator: 2.0.1
+  mockito:
+  fake_async: 1.3.1
+
+flutter_gen:
+  output: lib/generated
+  line_length: 80
+
+  integrations:
+    flutter_svg: true
+
+flutter:
+  generate: true
+  uses-material-design: true
+  assets:
+    - assets/fonts/
+    - assets/icons/
+    - assets/images/
+    - .env/.dev.env
+    - .env/.stage.env
+    - .env/.prod.env
+  fonts:
+    - family: Rubik
+      fonts:
+        - asset: assets/fonts/rubik_light.ttf
+          weight: 400
+        - asset: assets/fonts/rubik_regular.ttf
+          weight: 300
+    - family: Spinnaker
+      fonts:
+        - asset: assets/fonts/spinnaker_regular.ttf
+          weight: 400
+    - family: RampartOne
+      fonts:
+        - asset: assets/fonts/rampart_one.ttf
+          weight: 400
+flutter_intl:
+  enabled: true
+  class_name: AppLocalizations
